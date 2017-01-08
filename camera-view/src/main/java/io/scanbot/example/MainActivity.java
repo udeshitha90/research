@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements PictureCallback {
     protected void onPause() {
         super.onPause();
         cameraView.onPause();
+        //hello
     }
 
     @Override
