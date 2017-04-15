@@ -92,10 +92,10 @@ public class MainActivity extends AppCompatActivity implements PictureCallback {
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
-                Intent intent = new Intent(MainActivity.this, ViewImage.class);
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 intent.putExtra("picture", byteArray);
                 startActivity(intent);
-                // File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/" + System.currentTimeMillis()+".jpg");
+//                 File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/" + System.currentTimeMillis()+".jpg");
             }
         });
     }

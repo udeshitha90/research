@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textSize="18sp"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:text="The apple tree (Malus pumila, commonly and erroneously called Malus domestica)
+        is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple.
+        It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.
+
+        There is an image of apple,
+
+        There is an equation it is A = pi r to the power 2,
+
+        There is an image of data table,
+
+
+    Month is January and Temperature is 18 ,
+    Month is February and Temperature is 25 ,
+    Month is March and Temperature is 29 ,
+    Month is April and Temperature is 27,
+    Month is May and Temperature is 20,
+    Month is June and Temperature is 24 ,
+    Month is July and Temperature is 26 ,
+    Month is August and Temperature is 29 "
+        android:clickable="false"
+        android:duplicateParentState="false"
+        android:editable="false"
+        android:enabled="false" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:weightSum="2"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVresult"
+        android:layout_weight="1"
+        android:layout_marginBottom="62dp"
+        tools:text=".............."
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText" />
+
+
+</RelativeLayout>
